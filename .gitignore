@@ -1,6 +1,1 @@
-__pycache__
-*.pyc
-.vagrant
-*.log
-Vagrantfile
-*.db
+./client_secrets.json
