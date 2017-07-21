@@ -62,12 +62,3 @@ The following are open to the public:
 
 Catalog JSON: `/catalog/JSON`
     - Displays the whole catalog. Categories and all items.
-
-Categories JSON: `/catalog/categories/JSON`
-    - Displays all categories
-
-Category Items JSON: `/catalog/<path:category_name>/items/JSON`
-    - Displays items for a specific category
-
-Category Item JSON: `/catalog/<path:category_name>/<path:item_name>/JSON`
-    - Displays a specific category item.
