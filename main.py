@@ -20,8 +20,9 @@ import urllib2
 # Globals
 # ====================
 googleTokenURL = 'https://www.googleapis.com/oauth2/v3/tokeninfo?id_token={}'
-#App secret key if needed
-secretKey = 'dev_key'
+
+# App secret key if needed
+secretKey = 'secret'
 
 engine = create_engine('sqlite:///catalog.db')
 DBSession = sessionmaker(bind=engine)
