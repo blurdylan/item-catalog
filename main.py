@@ -185,6 +185,9 @@ def showItemJSON(category_id, item_id):
 @app.route(
     '/category/<int:category_id>/<int:item_id>/edit/',
     methods=['GET', 'POST'])
+# Login decorator
+
+@auth
 def editItem(category_id, item_id):
     # Display a form to edit an item or receive form data and edit item in DB.
 
@@ -211,6 +214,9 @@ def editItem(category_id, item_id):
 
 @app.route(
     '/category/<int:category_id>/<int:item_id>/delete/', methods=['POST'])
+# Login decorator
+
+@auth
 def deleteItem(category_id, item_id):
     # Delete an item from the database.
 
@@ -308,7 +314,7 @@ def newItem():
 
         item = Item(
             name=name, description=description,
-            category_i=category, user_id=user_id)
+            category_id=category, user_id=user_id)
         db_session.add(item)
         db_session.commit()
 
