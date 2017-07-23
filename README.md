@@ -62,8 +62,13 @@ The following are open to the public:
 
 Catalog JSON: `/JSON`
     - Displays the whole catalog. Categories and all items.
+
 Category JSON: `/category/<categoryID>/json`
+    - Displays the whole category.
+
 Item JSON: `/category/<categoryID>/<itemID>/json`
+    - Displays an item JSON
+
 
 ## References
 - CSS : https://codepen.io/romswellparian/pen/emByWV
